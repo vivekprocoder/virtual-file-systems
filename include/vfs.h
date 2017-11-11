@@ -43,37 +43,6 @@ typedef struct data_block {
 	long int next;
 } block;
 
-int vfscreate(char label[], long int size);
-
-int vfsmount(char label[]);
-
-int vfsunmount(char label[]);
-
-int vfsmakedir(char parent_path[MAX_PATH_SIZE],
-		char dir_name[MAX_FILE_NAME_SIZE]);
-
-int vfsdeletedir(char *P1) ;
-
-int vfsmovedir(char *, char *);
-
-int vfslistdir(char *, int , char *);
-
-int vfsaddfile(char *, char *, char *);
-
-int vfslistfile(char *, char *);
-
-int vfsupdatefile(char *, char *);
-
-int vfsremovefile(char *);
-
-int vfsmovefile(char *, char *);
-
-int vfscopyfile(char *, char *);
-
-int vfsexportfile(char *, char *);
-
-int vfssearchfile(char *, char *);
-
 char* getFileType(char*);
 
 file_d* prepareFileDescriptor(char *path, char *filename, char *filetype);
