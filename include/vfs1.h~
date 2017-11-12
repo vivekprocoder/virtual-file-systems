@@ -1,8 +1,7 @@
 #ifndef VFS_1_INCLUDED
 #define VFS_1_INCLUDED
 
-int vfsmakedir(char parent_path[MAX_PATH_SIZE],
-		char dir_name[MAX_FILE_NAME_SIZE]);
+int vfscreate(char label[], long int size);
 
 int vfslistdir(char *, int , char *);
 
