@@ -53,6 +53,6 @@ char* getFileType(char* P1) {
 		strcpy(tokens[num_token], token);
 		token = strtok(NULL, "/");
 		num_token++;
-	}
+	}m
 	return tokens[num_token - 1];
 }

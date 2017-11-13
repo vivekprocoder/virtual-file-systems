@@ -1,7 +1,8 @@
-
+#include <stdlib.h>
 #include <stddef.h>
 #include<string.h>
 #include "../include/linkedlist.h"
+
 
 #define ERRORNOTFOUND -1
 #define FOUND 0

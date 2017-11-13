@@ -8,8 +8,8 @@
 
 typedef struct nary_tree {
 	 file_d *data;
-	 struct nary_tree *child;
-	 struct nary_tree *siblings;
+	 struct nary_tree *left_child;
+	 struct nary_tree *right_sibling;
 }t_node;
 
 t_node* nary_root_init();

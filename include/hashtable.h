@@ -2,13 +2,13 @@
 #define HASHTABLE_H_INCLUDED
 
 #define HASHTABLESIZE 256
-#define ERRORNOTFOUND -1
-#define FOUND 0
+
 #define SUCCESS 0
 #define FAILURE -1
 
 #include "../include/linkedlist.h"
 #include "../include/vfs.h"
+#include "../include/error_code.h"
 
 typedef struct hash_table {
 	l_node* Table[HASHTABLESIZE];
