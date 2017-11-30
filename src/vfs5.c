@@ -204,8 +204,6 @@ int vfsmovefile(char *P1, char *P2) {
 	P1 = removeslash(P1);
 	P2 = removeslash(P2);
 
-	/*printf("inorder in movedir before");
-	 inorder(globaldata->root_bst);*/
 	char *p22 = (char*) malloc((sizeof(char)) * MAX_PATH_SIZE);
 	strcpy(p22, P2);
 	char *src_Path, *dest_Path;
@@ -216,13 +214,9 @@ int vfsmovefile(char *P1, char *P2) {
 	char *src_Dir;
 	src_Dir = (char*) malloc(sizeof(char) * CHARSIZE);
 	bst_node *src_fd, *des_fd, *temp_src_fd;
-	// int ret=move_Function(datastr->ntree,src_Path,dest_Path,"DIR");
-	/*  if(mainstr->is_mounted!=5)
-	 return 8;*/
-	/*printf("bst inorder in movedir\n");
-	 inorder(globaldata->root_bst);*/
-	src_fd = bst_find(globaldata->root_bst, P1);
-	des_fd = bst_find(globaldata->root_bst, P2);
+	/*to do
+		search for P1 and P2 in bst and store result in scr_fd and des_fd
+	*/
 	if (src_fd == NULL )
 		return MOVEDIR_CANNOT_FIND_SPECIFIED_SOURCEDIR;
 	if (des_fd == NULL )
