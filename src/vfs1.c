@@ -1,5 +1,5 @@
 #include "../include/vfs1.h"
-
+/*dfajsfjhsdjhfashfjkadsh*/
 int vfsmakedir(char parent_path[MAX_PATH_SIZE],
 		char dir_name[MAX_FILE_NAME_SIZE]) {
 	//checking mount status
